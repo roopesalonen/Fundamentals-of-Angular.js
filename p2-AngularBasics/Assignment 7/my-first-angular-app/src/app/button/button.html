@@ -1,0 +1,8 @@
+<button
+    [style.backgroundColor]="isDisabled ? 'green' : 'gray'"
+    (click)="toggleStatus()">
+    Click
+</button>
+
+<p>{{ isDisabled ? input : '' }}</p>
+<input [hidden]="!isDisabled" [(ngModel)]="input">

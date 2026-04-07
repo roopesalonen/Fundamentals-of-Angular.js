@@ -1,0 +1,6 @@
+<button
+    [style.backgroundColor]="isDisabled ? 'green' : 'gray'"
+    (click)="toggleStatus()">
+    Click
+</button>
+<p>{{ isDisabled ? 'Hello! You have clicked the button.' : '' }}</p>
