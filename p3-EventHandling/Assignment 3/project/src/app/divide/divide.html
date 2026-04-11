@@ -1,0 +1,7 @@
+<h3>Divider</h3>
+<input type="number" [(ngModel)]="divider"/>
+<button
+    (click)="divideResult()">
+    Click
+</button>
+<p>{{ hidden ? '' : `Value ${value} divided by ${divider} = ${dividedResult.toFixed(2)}` }}</p>

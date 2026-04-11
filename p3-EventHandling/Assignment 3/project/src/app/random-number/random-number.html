@@ -1,0 +1,9 @@
+<h3>Random number 1-100 + input:</h3>
+<input type="number" [(ngModel)]="input"/>
+<button
+    (click)="generateNumber()">
+    Click
+</button>
+<p>{{ hidden ? '' : `Input ${input} + random number ${number} = ${result}` }}</p>
+
+<app-divide [value]="result"></app-divide>
