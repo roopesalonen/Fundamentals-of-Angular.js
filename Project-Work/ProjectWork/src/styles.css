@@ -1,0 +1,9 @@
+html {
+    text-align: center;
+    background-color: rgb(36, 36, 36);
+    color: rgb(243, 243, 243);
+}
+
+.nav-link {
+    color: gray
+}

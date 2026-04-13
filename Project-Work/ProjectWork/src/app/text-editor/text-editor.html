@@ -1,0 +1,23 @@
+<div>
+    <h2>Text Editor</h2>
+
+    <textarea placeholder="Enter text" [(ngModel)]="text" rows="8" cols="50"
+    [style.font-weight]="isBold ? 'bold' : 'normal'"
+    [style.font-style]="isItalic ? 'italic' : 'normal'"
+    [style.text-decoration]="isUnderlined ? 'underline' : 'none'">
+    </textarea>
+</div>
+<div>
+    <button
+        (click)="bold()">
+        Bold
+    </button>
+        <button
+        (click)="italic()">
+        Italic
+    </button>
+        <button
+        (click)="underline()">
+        Underline
+    </button>
+</div>
