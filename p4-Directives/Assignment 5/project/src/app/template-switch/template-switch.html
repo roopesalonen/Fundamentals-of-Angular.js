@@ -1,0 +1,10 @@
+<button (click)="changeTemplate('name')">Name</button>
+<button (click)="changeTemplate('age')">Age</button>
+<button (click)="changeTemplate('job')">Job</button>
+
+<div [ngSwitch]="template">
+    <div *ngSwitchCase="'default'">This is default view.</div>
+    <div *ngSwitchCase="'name'">My name is Mark.</div>
+    <div *ngSwitchCase="'age'">I'm 50 years old.</div>
+    <div *ngSwitchCase="'job'">I'm a farmer.</div>
+</div>

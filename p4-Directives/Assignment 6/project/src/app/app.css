@@ -1,0 +1,11 @@
+.page {
+    background-color: white;
+    color: black;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.page.dark {
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
